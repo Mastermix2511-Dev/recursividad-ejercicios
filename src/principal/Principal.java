@@ -20,6 +20,7 @@ public class Principal {
                 case 2 -> divisionRecursiva();
                 case 3 -> digitoRecursiva();
                 case 4 -> digitoRecursivaSuma();
+                case 5 -> conteo();
                 case 0 -> System.out.println("Hasta la proxima...");
                 default -> System.out.println("Digita una de las opciones anteriores...");
             }
@@ -34,6 +35,7 @@ public class Principal {
         System.out.println("2.- Division recursiva------");
         System.out.println("3.- Digito recursivo--------");
         System.out.println("4.- Digito suma recursiva---");
+        System.out.println("5.- Digito conteo recursivo-");
         System.out.println("0.- Salir del programa:-----");
         System.out.println();
     }
@@ -70,7 +72,11 @@ public class Principal {
         System.out.println(dig);
     }
 
-    public static void pruebaConGit(){
-        System.out.println("Esta es una prueba con git y acabo de poner un metodo");
+    public static void conteo() {
+        System.out.println("Digita un numero para comenzar a contar");
+        int n = sc.nextInt();
+        System.out.println("Digita el numero hasta donde quieres que llegue");
+        int conteo = sc.nextInt();
+        recursividad.conteo(n, conteo);
     }
 }

@@ -38,4 +38,14 @@ public class Recursividad {
         }
     }
 
+    public void conteo(int n, int conteo) {
+
+        if (n <= conteo) {
+            System.out.println(n);
+            conteo(n + 1, conteo);
+        } else
+            System.out.println("Termino el conteo");
+
+    }
+
 }
