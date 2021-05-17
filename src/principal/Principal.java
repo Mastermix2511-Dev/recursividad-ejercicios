@@ -69,4 +69,8 @@ public class Principal {
         int dig = recursividad.sumaDigitos(digito);
         System.out.println(dig);
     }
+
+    public static void pruebaConGit(){
+        System.out.println("Esta es una prueba con git y acabo de poner un metodo");
+    }
 }
